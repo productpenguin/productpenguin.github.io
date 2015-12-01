@@ -319,6 +319,32 @@ select {
 
 }
 
+.speech_bubble {
+	position: relative;
+	background: #ddd;
+	padding: 15px;
+	border-radius: 3px;
+	text-transform: none;
+	width: 40%;
+	margin: 0 auto;
+	font-weight: 400;
+	color: #888;
+}
+.speech_bubble:after {
+	bottom: 100%;
+	left: 5.5%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ddd;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
 /* Button */
 
 .button,
@@ -387,7 +413,7 @@ input::-moz-focus-inner {
 /* Media Queries */
 
 @media only screen and (max-width: 1024px) {
-	.hero #mc_embed_signup { 
+	.hero #mc_embed_signup, .speech_bubble { 
 		width: 60%; 
 	}
 }
@@ -403,7 +429,7 @@ input::-moz-focus-inner {
 	.hero .lock {
 		display: none;
 	}
-	.hero #mc_embed_signup {
+	.hero #mc_embed_signup, .speech_bubble {
 		clear: both;
 		width: 75%;
 	}
@@ -423,18 +449,22 @@ input::-moz-focus-inner {
 		border-radius: 3px;
 		float: none;
 	}
+	.speech_bubble:after {
+		left: 50%;
+	}
 }
 
 @media only screen and (max-width: 460px) {
-	.hero #mc_embed_signup { width: 80%; }
+	.hero #mc_embed_signup, .speech_bubble { width: 80%; }
 }
 
 @media only screen and (max-width: 400px) {
 	.hero #mc_embed_signup { width: 90%; }
+	.speech_bubble { display: none; }
 }
 
 @media only screen and (max-width: 320px) {
-	.logo, .icon-scroll {
+	.logo, .icon-scroll, .hero #mc_embed_signup .fa {
 		display: none;
 	}
 }
