@@ -15,8 +15,6 @@ html { height: 100%; }
 	margin: 0;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -104,8 +102,6 @@ a:hover, a:focus {
 	font-weight: 300;
 	margin-top: 15px;
 }
-
-/* Icon scroll by Shak Daniel http://codepen.io/shakdaniel/pen/JoKOQx */
 
 .icon-scroll,
 .icon-scroll:before {
@@ -467,4 +463,13 @@ input::-moz-focus-inner {
 	.logo, .icon-scroll, .hero #mc_embed_signup .fa {
 		display: none;
 	}
+}
+
+/* Safari fix for hero unit height */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+    ::i-block-chrome,.hero {
+     height: 667px;
+    }
 }
