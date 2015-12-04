@@ -231,8 +231,22 @@ footer .footerLogo {
 .bottom {
 	text-align: center;
 	background: #111;
-	color: #ddd;
+	color: #888;
 	padding: 30px 15px;
+	margin: 0;
+	font-weight: 400;
+}
+
+.bottom a {
+	color: #aaa;
+}
+
+.bottom a:hover {
+	color: #ddd;
+}
+
+.nobottompadding {
+	padding-bottom: 0 !important;
 }
 
 /* MailChimp */
