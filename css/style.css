@@ -1,6 +1,6 @@
 /* General */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 html { height: 100%; }
@@ -30,21 +30,23 @@ html { height: 100%; }
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #f9f9f9;
-    font-weight: 300;
-    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    background: #fff;
+    font-size: 20px;
+	line-height: 28px;
     color: #333;
     overflow: scroll;
     overflow-x: hidden;
 }
 
 a {
-	color: #11abb0;
+	color: #111;
 	text-decoration: none;
+	outline: none;
 }
 
 a:hover, a:focus {
+  color: #888;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -56,34 +58,12 @@ a:hover, a:focus {
 	text-align: center;
 	display: table; /* Vertical align */
 	width: 100%;
-	background: #000 url(../images/bg.jpg) repeat center center;
-	position: relative;
-	background-position: 0px 0px;
-	animation: animatedBG 40s linear infinite;
-	color: #fff;
-}
-
-@keyframes animatedBG {
-	from { background-position: 0 0; }
-	to { background-position: 0 777px; }
-}
-
-.hero .logo {
-	text-indent: -9999px;
-	width: 218px;
-	height: 50px;
-	background: url(../images/logo.png) no-repeat;
-	position: absolute;
-	top: 30px;
-	left: 50%;
-	margin-left: -99px;
 }
 
 .hero .cta {
 	display: table-cell; /* Vertical align */
 	vertical-align: middle; /* Vertical align */
-	text-transform: uppercase;
-	padding: 0 15px;
+	padding: 15px;
 }
 
 .hero .button {
@@ -92,161 +72,27 @@ a:hover, a:focus {
 
 .hero h1 {
 	font-size: 44px;
-	line-height: 48px;
+	line-height: 48px;s
 	margin: 0 auto;
-	font-weight: 700;
+	font-weight: normal;
 }
 
 .hero p, .hero h2 {
 	font-size: 20px;
-	font-weight: 300;
-	margin-top: 15px;
+	margin: 30px auto 0;
+	width: 40%;
+	font-weight: normal;
 }
 
-.icon-scroll,
-.icon-scroll:before {
-  position: absolute;
-  left: 50%;
-}
-
-.icon-scroll {
-  width: 20px;
-  height: 36px;
-  margin-left: -10px;
-  bottom: 30px;
-  margin-top: -18px;
-  box-shadow: inset 0 0 0 1px #fff;
-  border-radius: 25px;
-}
-
-.icon-scroll:before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  background: #fff;
-  margin-left: -2px;
-  top: 8px;
-  border-radius: 2px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px);
-  }
-}
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px);
-  }
-}
-
-.gumroad-button {
-	margin-top: 25px;
-	text-transform: none;
-}
-
-.og-grid li > a:hover {
-	opacity: 0.9;
-}
-
-.unlocked .og-details a::before {
-	content: '\f019';
-}
-
-header p, header h2 {
-	display: block;
+.hero ul.social {
+	margin-top: 20px;
 	font-size: 20px;
-	font-weight: 300;
-	margin-top: 10px;
 }
 
-.container {
-	width: 100%;
-	position: relative;
-}
-
-.container > header {
-	width: 90%;
-	max-width: 1240px;
-	margin: 0 auto;
-	position: relative;
-	padding: 0 30px 50px 30px;
-}
-
-.container > header {
-	padding: 60px 30px 50px;
-	text-align: center;
-}
-
-.container > header h1 {
-	font-size: 34px;
-	line-height: 38px;
-	margin: 0 auto;
-	font-weight: 700;
-	color: #333;
-}
-
-.container > header h1 span {
-	display: block;
-	font-size: 20px;
-	font-weight: 300;
-}
-
-.main > p {
-	text-align: center;
-	padding: 50px 20px;
-}
-
-footer {
-	margin-top: 50px;
-}
-
-footer .footerLogo {
-	text-indent: -9999px;
-	width: 50px;
-	height: 50px;
-	background: url(../images/logo-icon.png) no-repeat;
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -25px;
-}
-
-.bottom {
-	text-align: center;
-	background: #111;
-	color: #888;
-	padding: 30px 15px;
-	margin: 0;
-	font-weight: 400;
-}
-
-.bottom a {
-	color: #aaa;
-}
-
-.bottom a:hover {
-	color: #ddd;
-}
-
-.nobottompadding {
-	padding-bottom: 0 !important;
+.hero ul.social li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
 }
 
 /* MailChimp */
@@ -270,14 +116,16 @@ footer .footerLogo {
 	float: left;
 }
 .hero #mc_embed_signup input[type="email"] {	
-	font-size: 16px;
+	font-size: 18px;
 	height: 54px;
 	line-height: 30px;
-	padding: 12px 15px 12px 55px;
-	border-radius: 3px 0 0 3px;	
-	background: #727272;
-	background: rgba(255, 255, 255, .2);	
+	padding: 12px 15px 12px 15px;
+	border-radius: 0;
+	border: 1px solid #111;
+	background: #fff;
+	color: #333;
 	width: 70%;
+	font-family: 'Merriweather', serif;
 }
 .hero #mc_embed_signup input[type="submit"] {
 	font-size: 16px;
@@ -285,24 +133,17 @@ footer .footerLogo {
 	height: 54px;
 	padding: 12px 30px;
 	margin: 0 0 18px 0;
-	border-radius: 0 3px 3px 0;	
-	background: #11abb0;
+	border-radius: 0;
+	border: 1px solid #111;
+	background: #111;
 	width: 30%;
-	text-transform: uppercase;
 }
 .hero #mc_embed_signup input[type="submit"]:hover {
-	background: #14d0d6;
+	background: #222;
 }
 
 .hero #mc_embed_signup {
 	position: relative;
-}
-
-.hero .mc_icon {
-	position: absolute;
-	top: 14px;
-	left: 20px;
-	font-size: 24px;
 }
 
 form { margin-bottom: 24px; }
@@ -315,7 +156,7 @@ textarea,
 select {
    display: block;
    padding: 18px 15px;
-   margin: 0 0 24px 0;
+   margin: 0;
    border: 0;
    outline: none;
    vertical-align: middle;
@@ -325,34 +166,8 @@ select {
    line-height: 24px;
    color: #fff;
    background: #D3D9D9;
-   border-radius: 3px;
+   border-radius: 0;
 
-}
-
-.speech_bubble {
-	position: relative;
-	background: #ddd;
-	padding: 15px;
-	border-radius: 3px;
-	text-transform: none;
-	width: 40%;
-	margin: 0 auto;
-	font-weight: 400;
-	color: #888;
-}
-.speech_bubble:after {
-	bottom: 100%;
-	left: 5.5%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-bottom-color: #ddd;
-	border-width: 10px;
-	margin-left: -10px;
 }
 
 /* Button */
@@ -363,9 +178,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 16px/24px "Lato",Calibri,Arial,sans-serif;
-   font-weight: 700;
-   background: #11abb0;
+   font: 16px/24px 'Merriweather', serif;
+   background: #111;
    color: #fff;
    display: inline-block;   
    text-decoration: none;
@@ -380,7 +194,7 @@ input[type="button"] {
    -o-transition: all .2s ease-in-out;
    -ms-transition: all .2s ease-in-out;
    transition: all .2s ease-in-out;
-   border-radius: 3px;
+   border-radius: 0;
 }
 
 .button:hover,
@@ -388,7 +202,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-   background: #14d0d6;
+   background: #222;
    color: #fff;
 }
 
@@ -397,7 +211,7 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-   background: #11abb0;
+   background: #111;
    color: #fff;
 }
 
@@ -423,7 +237,7 @@ input::-moz-focus-inner {
 /* Media Queries */
 
 @media only screen and (max-width: 1024px) {
-	.hero #mc_embed_signup, .speech_bubble { 
+	.hero #mc_embed_signup, .hero p, .hero h2 { 
 		width: 60%; 
 	}
 }
@@ -436,10 +250,7 @@ input::-moz-focus-inner {
 	.hero p {
 		font-size: 18px;
 	}
-	.hero .lock {
-		display: none;
-	}
-	.hero #mc_embed_signup, .speech_bubble {
+	.hero #mc_embed_signup, .hero p, .hero h2 {
 		clear: both;
 		width: 75%;
 	}
@@ -448,7 +259,6 @@ input::-moz-focus-inner {
 	}
 	.hero #mc_embed_signup input[type="email"] {
 		width: 100%;
-		border-radius: 3px;
 		float: none;
 		text-align: center;
 		margin-bottom: 5px;
@@ -456,27 +266,24 @@ input::-moz-focus-inner {
 	}
 	.hero #mc_embed_signup input[type="submit"] {
 		width: 100%;
-		border-radius: 3px;
+		border-radius: 0;
 		float: none;
 	}
-	.speech_bubble:after {
-		left: 50%;
+	.hero p, .hero h2 {
+		width: 100%;
 	}
 }
 
 @media only screen and (max-width: 460px) {
-	.hero #mc_embed_signup, .speech_bubble { width: 80%; }
+	.hero #mc_embed_signup, .hero p, .hero h2 { width: 80%; }
 }
 
 @media only screen and (max-width: 400px) {
-	.hero #mc_embed_signup { width: 90%; }
-	.speech_bubble { display: none; }
+	.hero #mc_embed_signup, .hero p, .hero h2 { width: 90%; }
 }
 
 @media only screen and (max-width: 320px) {
-	.logo, .icon-scroll, .hero #mc_embed_signup .fa {
-		display: none;
-	}
+	.hero #mc_embed_signup input[type="email"] { font-size: 16px; }
 }
 
 /* Safari fix for hero unit height */
