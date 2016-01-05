@@ -32,7 +32,7 @@ html { height: 100%; }
 body {
     font-family: 'Merriweather', serif;
     background: #fff;
-    font-size: 20px;
+    font-size: 18px;
 	line-height: 28px;
     color: #333;
     overflow: scroll;
@@ -78,7 +78,7 @@ a:hover, a:focus {
 }
 
 .hero p, .hero h2 {
-	font-size: 20px;
+	font-size: 18px;
 	margin: 30px auto 0;
 	width: 40%;
 	font-weight: normal;
@@ -86,7 +86,7 @@ a:hover, a:focus {
 
 .hero ul.social {
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .hero ul.social li {
@@ -116,7 +116,7 @@ a:hover, a:focus {
 	float: left;
 }
 .hero #mc_embed_signup input[type="email"] {	
-	font-size: 18px;
+	font-size: 16px;
 	height: 54px;
 	line-height: 30px;
 	padding: 12px 15px 12px 15px;
