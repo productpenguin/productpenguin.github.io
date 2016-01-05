@@ -1,6 +1,6 @@
 /* General */
 
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 html { height: 100%; }
@@ -30,7 +30,7 @@ html { height: 100%; }
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Droid Serif', serif;
     background: #fff;
     font-size: 18px;
 	line-height: 28px;
@@ -80,7 +80,7 @@ a:hover, a:focus {
 .hero p, .hero h2 {
 	font-size: 18px;
 	margin: 30px auto 0;
-	width: 40%;
+	width: 35%;
 	font-weight: normal;
 }
 
@@ -100,7 +100,7 @@ a:hover, a:focus {
 .hero #mc_embed_signup {
 	clear: both;
 	margin: 35px auto 0;
-	width: 40%;	
+	width: 35%;	
 }
 .hero #mc_embed_signup:before,
 .hero #mc_embed_signup:after {
@@ -125,7 +125,7 @@ a:hover, a:focus {
 	background: #fff;
 	color: #333;
 	width: 70%;
-	font-family: 'Merriweather', serif;
+	font-family: 'Droid Serif', serif;
 }
 .hero #mc_embed_signup input[type="submit"] {
 	font-size: 16px;
@@ -178,7 +178,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 16px/24px 'Merriweather', serif;
+   font: 16px/24px 'Droid Serif', serif;
    background: #111;
    color: #fff;
    display: inline-block;   
