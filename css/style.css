@@ -122,7 +122,7 @@ a:hover, a:focus {
 	padding: 12px 15px 12px 15px;
 	border-radius: 0;
 	border: 1px solid #111;
-	background: #fff;
+	background: transparent;
 	color: #333;
 	width: 70%;
 	font-family: 'Droid Serif', serif;
@@ -224,6 +224,55 @@ input[type="button"].full-width {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	text-align: center;
+}
+
+/* Video background */
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+		background: rgba(255, 255, 255, 0.95);
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+		z-index: -2;
+		left: 0;
+}
+.video-container video {
+    position: absolute;
+		z-index: -1;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+		left: 0;
+		top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.video-container video, .video-container .poster img {
+		display: none;
+	}
+
 }
 
 /* Fix for odd Mozilla border & padding issues */
