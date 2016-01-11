@@ -329,7 +329,6 @@ input::-moz-focus-inner {
 
 @media only screen and (max-width: 400px) {
 	.hero #mc_embed_signup, .hero p, .hero h2 { width: 90%; }
-	.logo { width: auto; height: 35px; }
 }
 
 @media only screen and (max-width: 320px) {
