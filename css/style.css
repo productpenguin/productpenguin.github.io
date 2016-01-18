@@ -80,7 +80,7 @@ a:hover, a:focus {
 .hero p, .hero h2 {
 	font-size: 18px;
 	margin: 30px auto 0;
-	width: 35%;
+	width: 40%;
 	font-weight: normal;
 }
 
@@ -317,9 +317,6 @@ input::-moz-focus-inner {
 		width: 100%;
 		border-radius: 0;
 		float: none;
-	}
-	.hero p, .hero h2 {
-		width: 100%;
 	}
 }
 
